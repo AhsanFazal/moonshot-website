@@ -1,6 +1,11 @@
+/* 
+    Copyright 2018 Moonshot.Express
+    Created by Ahsan Fazal
+*/
+
 /* ==========================================================================
-   General CSS
-   ========================================================================== */
+General CSS
+========================================================================== */
 
 html {
     color: #222;
@@ -53,11 +58,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
+Helper classes
+========================================================================== */
 
 .hidden {
     display: none !important;
@@ -103,6 +106,159 @@ textarea {
 .clearfix:after {
     clear: both;
 }
+
+
+
+/* ==========================================================================
+Author Styles
+========================================================================== */
+.top-bar {
+    background: #f2994a;
+    height: 45px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.color.primary {
+    color: #f2994a;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero .menu {
+    margin: 0 0 100px 0;
+}
+
+.hero .menu {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.hero .menu .logo {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1.6px;
+    align-self: center;
+    height: 36px;
+}
+
+.hero .menu .divider {
+    margin: 0px 25px;
+    height: 30px;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.hero .menu .links {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.hero .menu .links .link {
+    align-self: center
+}
+
+.hero .menu .links .link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-right: 15px
+}
+
+.hero .menu .links .link:hover {
+    color: #f2994a;
+}
+
+.hero .text {
+    margin-bottom: 50px;
+    font-family: CircularSpotifyTxT-Med;
+    width: 450px;
+}
+
+.hero .text .title {
+    font-size: 24px;
+    color: #000000;
+}
+.hero .text .subtitle {
+    font-size: 16px;
+    color: rgba(0,0,0,0.50);
+}
+.hero .text .description {
+    margin-top: 20px;
+    font-family: CircularSpotifyTxT-Book;
+    font-size: 16px;
+    color: rgba(0,0,0,0.50);
+}
+
+.hero .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero .buttons .button {
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: CircularSpotifyTxT-Book;
+}
+
+.hero .buttons .button:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+.hero .buttons .and {
+    align-self: center;
+    margin: 0 15px;
+    font-family: CircularSpotifyTxT-Book;
+    font-size: 16px;
+    color: rgba(0,0,0,0.50);
+}
+
+.hero .buttons .secondary {
+    color: #f2994a;
+    border: #f2994a 2px solid;
+    border-radius: 3px;
+}
+
+.hero .buttons .primary {
+    background-color: #f2994a;
+    color: #fff;
+    border-radius: 3px;
+    align-self: center;
+    padding: 7px 30px;
+}
+
+.hero .graphics {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    height: 465px;
+    background-color: #0C3954;
+    display: flex;
+    width: 600px;
+}
+
+.hero .graphics img {
+    display: block;
+    max-width:407px;
+    max-height:176px;
+    width: auto;
+    height: auto;
+}
+/* ==========================================================================
+CSS media queries
+========================================================================== */
 
 @media only screen and (min-width: 500px) {
     
