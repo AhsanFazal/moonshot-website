@@ -104,6 +104,83 @@ textarea {
     clear: both;
 }
 
+.header {
+    width: 100%;
+    height: 30px; 
+    background-color: #00CF98;
+}
+.headercontent {
+    margin-left: 70%;
+    width: 20%;
+    height: 30px
+}
+.headertext {
+    color: white;
+    align-content: right;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.headercontent img {
+    margin-top: 5px;
+    align-content: left;
+    float: left;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    height: 1050px;
+}
+.firsttop {
+    flex: 1
+}
+.green {
+    float: left;
+    color: #00CF98;
+    margin-left: 0px;
+}
+.firstheader {
+    margin: 0% auto auto 10%;
+    font-family: Hack, monospace;
+}
+.firstheader p {
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.black {
+    float: left;
+    color: black;
+}
+
+
+
+
+
+
+.firstbottom {
+    flex: 1;
+    background-color: #0C3954;
+    display: flex;
+    flex-direction: row;
+}
+.firstbottomtext {  
+    flex: 2;
+}
+.firstbottomtext p, .firstbottomtext h1 {
+    margin-left: 20%;
+    color: white;
+    margin-top: 10%;
+    width: 70%;
+}
+.firstbottomgraph {
+    flex: 3;
+}
+.firstbottomgraph img {
+    margin: 10% 15% 15% auto;
+    width: 660px;
+    height: 390px;
+}
 @media only screen and (min-width: 500px) {
     
 }
