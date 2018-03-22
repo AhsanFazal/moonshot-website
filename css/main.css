@@ -324,7 +324,80 @@ Author Styles
     width: 60%;
     right: 0;
     z-index: 0;
-    background-color: #23282E;
+    background-color: #131314;
+}
+
+.steps-section {
+    padding: 100px 0px
+}
+
+.steps-section .main-title {
+    font-family: Montserrat-Bold;
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 2.67px;
+    text-align: center
+}
+
+.steps-section .main-description {
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 16px;
+    color: #4D4D4D;
+    letter-spacing: 0;
+    line-height: 32px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.steps-section .cards {
+    margin-top: 64px
+}
+
+.steps-section .cards .card {
+    background: #FFFFFF;
+    box-shadow: 0 10px 50px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    padding: 64px 80px;
+    margin-bottom: 64px
+}
+
+.steps-section .cards .card .title {
+    font-family: CircularSpotifyTxT-Bold;
+    font-size: 30px;
+}
+
+.steps-section .cards .card .explaination {
+    margin-top: 32px;
+    display: flex;
+}
+
+.steps-section .cards .card .explaination .description {
+    width: 50%
+}
+
+.steps-section .cards .card .explaination .goal {
+    width: 50%
+}
+
+.steps-section .cards .card .explaination .title {
+    font-family: CircularSpotifyTxT-Bold;
+    font-size: 20px;
+    color: #000000;
+}
+
+.steps-section .cards .card .explaination .title {
+    font-family: CircularSpotifyTxT-Bold;
+    font-size: 16px;
+    color: #000000;
+}
+
+.steps-section .cards .card .explaination .text {
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 16px;
+    color: #6A6A6A;
+    letter-spacing: 0;
+    margin-top: 32px;
+    width: 80%
 }
 
 /* ==========================================================================
