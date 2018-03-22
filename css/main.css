@@ -1,6 +1,11 @@
+/* 
+    Copyright 2018 Moonshot.Express
+    Created by Ahsan Fazal
+*/
+
 /* ==========================================================================
-   General CSS
-   ========================================================================== */
+General CSS
+========================================================================== */
 
 html {
     color: #222;
@@ -53,11 +58,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
+Helper classes
+========================================================================== */
 
 .hidden {
     display: none !important;
@@ -104,165 +107,542 @@ textarea {
     clear: both;
 }
 
-.header {
-    width: 100%;
-    height: 30px; 
-    background-color: #00CF98;
+
+
+/* ==========================================================================
+Author Styles
+========================================================================== */
+.top-bar {
+    background: #f2994a;
+    height: 45px;
 }
-.headercontent {
-    margin-left: 70%;
-    width: 20%;
-    height: 30px
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
-.headertext {
-    color: white;
-    align-content: right;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
+.color.primary {
+    color: #f2994a;
 }
-.headercontent img {
-    margin-top: 5px;
-    align-content: left;
-    float: left;
+
+.hero {
+    padding: 50px 0;
 }
-.first {
+
+.hero .menu {
+    margin: 0 0 100px 0;
+}
+
+.hero .menu {
     display: flex;
-    flex-direction: column;
-    height: 1050px;
+    flex-direction: row;
+    height: 30px;
 }
-.firsttop {
-    flex: 1
+
+.hero .menu .logo {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1.6px;
+    align-self: center;
+    height: 36px;
 }
-.green {
+
+.hero .menu .divider {
+    margin: 0px 25px;
+    height: 30px;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.hero .menu .links {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.hero .menu .links .link {
+    align-self: center
+}
+
+.hero .menu .links .link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.2s ease
+}
+
+.hero .menu .links .link:hover {
+    color: #f2994a;
+}
+
+.hero .text {
+    margin-bottom: 50px;
+    font-family: CircularSpotifyTxT-Med;
+    width: 450px;
+}
+
+.hero .text .title {
+    font-size: 24px;
+    color: #000000;
+}
+.hero .text .subtitle {
+    font-size: 16px;
+    color: rgba(0,0,0,0.50);
+}
+.hero .text .description {
+    margin-top: 20px;
+    font-family: CircularSpotifyTxT-Book;
+    font-size: 16px;
+    color: rgba(0,0,0,0.50);
+}
+
+.hero .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero .buttons .button {
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: CircularSpotifyTxT-Book;
+}
+
+.hero .buttons .button:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+.hero .buttons .and {
+    align-self: center;
+    margin: 0 15px;
+    font-family: CircularSpotifyTxT-Book;
+    font-size: 16px;
+    color: rgba(0,0,0,0.50);
+}
+
+.hero .buttons .secondary {
+    color: #f2994a;
+    border: #f2994a 2px solid;
+    border-radius: 3px;
+}
+
+.hero .buttons .primary {
+    background-color: #f2994a;
+    color: #fff;
+    border-radius: 3px;
+    align-self: center;
+    padding: 7px 30px;
+}
+
+.hero .graphics {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    height: 465px;
+    background-color: #0B3752;
+    display: flex;
+    width: 600px;
+}
+
+.hero .graphics img {
+    display: block;
+    max-width: 350px;
+    width: auto;
+    height: auto;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.graph-section {
+    background-color: #0B3752;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.graph-section .text {
+    padding: 50px 0px;
+    width: 350px;
+}
+
+.graph-section .text .title {
+    font-family: Montserrat-Bold;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 2.67px;
+}
+
+.graph-section .text .description {
+    margin-top: 30px;
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 16px;
+    color: rgba(255,255,255,0.80);
+    letter-spacing: 0;
+}
+
+.graph-section .button {
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: CircularSpotifyTxT-Book;
+    color: #f2994a;
+    border: #f2994a 2px solid;
+    border-radius: 3px;
+    margin-top: 30px;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.graph-section .button:hover {
+    background-color: #f2994a;
+    color: #fff;
+}
+
+.graph-section .image-container img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    align-self: center;
+}
+
+.graph-section .image-container {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.graph-section .image-background {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    z-index: 0;
+    background-color: #131314;
+}
+
+.steps-section {
+    padding: 100px 0px
+}
+
+.steps-section .main-title {
+    font-family: Montserrat-Bold;
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 2.67px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+.steps-section .main-description {
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 16px;
+    color: #4D4D4D;
+    letter-spacing: 0;
+    line-height: 32px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.steps-section .cards {
+    margin-top: 64px
+}
+
+.steps-section .cards .card {
+    background: #FFFFFF;
+    box-shadow: 0 10px 50px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    padding: 64px 80px;
+    margin-bottom: 64px
+}
+
+.steps-section .cards .card .title {
+    font-family: CircularSpotifyTxT-Bold;
+    font-size: 30px;
+}
+
+.steps-section .cards .card .explaination {
+    margin-top: 32px;
+    display: flex;
+}
+
+.steps-section .cards .card .explaination .description {
+    width: 50%
+}
+
+.steps-section .cards .card .explaination .goal {
+    width: 50%
+}
+
+.steps-section .cards .card .explaination .title {
+    font-family: CircularSpotifyTxT-Bold;
+    font-size: 20px;
+    color: #000000;
+}
+
+.steps-section .cards .card .explaination .title {
+    font-family: CircularSpotifyTxT-Bold;
+    font-size: 16px;
+    color: #000000;
+}
+
+.steps-section .cards .card .explaination .text {
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 16px;
+    color: #6A6A6A;
+    letter-spacing: 0;
+    margin-top: 32px;
+    width: 80%
+}
+.quest-section {
     float: left;
-    color: #00CF98;
-    margin-left: 0px;
-    margin-right: 20px;
 }
-.firstheader {
-    margin: 0% auto auto 10%;
-    font-family: Hack, monospace;
-}
-.firstheader p {
+.quest-header {
+    width: 500px;
+    height: 455px;
+    background-color: #f2994a;
     float: left;
-    margin-left: 10px;
-    margin-top: 21px;
 }
-.black {
-    float: left;
-    color: black;
+.quest-title {
+    margin-left: 140px;
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 30px;
+    padding-top: 78px;
 }
-.firsttoptext {
-    font-family: Hack, monospace;
-    padding-top: 10%;
-    padding-left: 10%;
-    text-align: left;
-    width: 45%;
+.questheader-description {
+    font-family: CircularSpotifyTxT-Light;
+    margin-left: 140px;
+    margin-top: 48px;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 54px;
 }
-.firsttoptextlinks {
-    padding-left: 10%;
-    padding-top: 5%;
+.third-button {
+    background-color: white;
+    color: #f2994a;
+    border-radius: 3px;
+    align-self: center;
+    padding: 7px 30px;
+    text-decoration: none;
+    margin-left: 140px;
 }
-.firsttoptextlinks p {
-    float: left;
-    margin-left: 20px;
+.quest-list {
+    width: 100%;
+    height: 455px;
+    background-color: #0A3954;
 }
-.manifesto {
-    border-style: solid;
-    border-color: #00CF98;
-    color: #00CF98;
+.main-title2 {
+    font-family: Montserrat-Bold;
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 2.67px;
+    text-align: center;
+    margin-top: 150px;
+}
+.main-description2 {
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 16px;
+    color: #4D4D4D;
+    letter-spacing: 0;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ecosystem-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ecosystem-card {
+    height: 230px;
+    width: 250px;
+    margin: 45px;
+    box-shadow: 0 10px 50px 0 rgba(0,0,0,0.20);
     border-radius: 5px;
 }
 
-
-
-
-
-.firstbottom {
-    flex: 1;
-    background-color: #0C3954;
-    display: flex;
-    flex-direction: row;
-}
-.firstbottomtext {  
-    flex: 2;
-    font-family: Hack, monospace;
-}
-.firstbottomtext p, .firstbottomtext h1 {
-    margin-left: 20%;
-    color: white;
-    margin-top: 10%;
-    width: 70%;
-}
-.firstbottomgraph {
-    flex: 3;
-}
-.firstbottomgraph img {
-    margin: 10% 15% 15% auto;
-    width: 660px;
-    height: 390px;
-}
-
-
-
-
-.second {
-    margin-left: 8%;
-    margin-right: 8%;
-    flex-direction: column;
-    height: 2100px;
-}
-
-.secondheader h1 {
-    margin-top: 2px;
-}
-.secondheader {
-    text-align: center;
-    margin-left: 25%;
-    width: 50%;
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-.steps {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    box-shadow: 0 10px 50px 0 rgba(0,0,0,0.20);
-    height: 466px;
-    display: flex;
-    flex-direction: column;
-}
-.stepstitle {
-    flex: 1;
-    margin-left: 10%;
-}
-.stepstitle h1 {
-    margin-top: 10%;
-    font-family: 
-    float: left;
-}
-.stepscontent {
-    flex: 4;
-    display: flex;
-    flex-direction: row;
-}
-.stepsleft {
-    flex: 1;
-    margin-left: 10%;
-    margin-right: 5%;
-}
-.stepsright {
-    flex: 1;
-    margin-left: 5%;
-    margin-right: 10%;
-}
-.third {
-    height: 455px;
-    width: 100%;
-    background-color: #0C3954;
-}
-
-
-@media only screen and (min-width: 500px) {
+.maincontainer {
+    margin: auto;
+    width: 1500px;
+    position: relative;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.15);
+    margin-top: 50px;
     
 }
+.footer {
+    margin-top: 100px;
+    height: 350px;
+    width: 1500px;
+    background-color: #0A3954;
+}
+.pages {
+    margin-left: 300px;
+    width: 100px;
+    font-family: CircularSpotifyTxT-Light;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    height: 350px;
+    float: left;
+}
+.pagestitle {
+    color: white;
+    text-decoration: none;
+    padding-top: 64px;
+}
+.pagescontent {
+    margin-bottom: 64px;
+}
+.pagescontent a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contact {
+    margin-left: 33px;
+    width: 320px;
+    height: 125px;
+    color: #FFFFFF;
+    float: left;
+    padding-top: 64px;
+}
+.contact a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.progress {
+    margin-left: 62px;
+    width: 320px;
+    height: 160px;
+    padding-top: 64px;
+    float: left;
+    color: #FFFFFF;
+}
+.progressbar {
+    width: 320px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+.progressbarpercentage {
+    width: 10%;
+    height: 30px;
+    background-color: #f2994a;
+    border-radius: 100px;
+}
+.ecosystem-button {
+    background-color: #f2994a;
+    color: white;
+    border-radius: 3px;
+    align-self: center;
+    width: 200px;
+    text-align: center;
+    margin-left: 25px;
+    height: 30px;
+    padding-top: 7px;
+}
+.ecosystem-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.ecosystem-card img {
+    width: auto;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.image-background {
+    float: left;
+}
+.text {
+    float: left;
+}
+/* ==========================================================================
+CSS media queries
+========================================================================== */
+
+@media only screen and (max-width: 700px) {
+    .hero .graphics {
+        position: relative;
+        display: flex;
+        width: 0px;
+        height: 0px;
+    }
+    .hero {
+        width: 700px;
+        margin-left: 0px;
+    }
+    .hero .graphics img {
+        width: 0px;
+        height: 0px;
+    }
+    .hero .text {
+        width: 700px;
+        margin-left: 20px;
+    }
+    .image-container {
+        position: relative;
+        display: flex;
+        width: 700px;
+    }
+    .graph-section .image-container img {
+        display: flex;
+        width: 100%; 
+        width: auto;
+        height: auto;
+        align-self: center;
+    }
+    .top-bar {
+        width: 100%
+    }
+    .hero .graph-section {
+        width: 700px;
+    }
+    .image-background {
+        width: 700px;
+        height: auto;
+    }
+    .card {
+        width: 700px;
+        margin-left: 0px;
+    
+    }
+    .steps-section {
+        width: 700px;
+    }
+    .container {
+        margin-left: 0px;
+        padding-left: 0px;
+        justify-content: flex-start;
+        width: 700px;
+    }
+    .container .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+}
+
