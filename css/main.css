@@ -574,69 +574,101 @@ Author Styles
 CSS media queries
 ========================================================================== */
 
-@media only screen and (max-width: 700px) {
-    .hero .graphics {
-        position: relative;
-        display: flex;
-        width: 0px;
-        height: 0px;
-    }
-    .hero {
-        width: 700px;
-        margin-left: 0px;
-    }
-    .hero .graphics img {
-        width: 0px;
-        height: 0px;
-    }
-    .hero .text {
-        width: 700px;
-        margin-left: 20px;
-    }
-    .image-container {
-        position: relative;
-        display: flex;
-        width: 700px;
-    }
-    .graph-section .image-container img {
-        display: flex;
-        width: 100%; 
-        width: auto;
-        height: auto;
-        align-self: center;
-    }
-    .top-bar {
-        width: 100%
-    }
-    .hero .graph-section {
-        width: 700px;
-    }
-    .image-background {
-        width: 700px;
-        height: auto;
-    }
-    .card {
-        width: 700px;
-        margin-left: 0px;
-    
-    }
-    .steps-section {
-        width: 700px;
+@media only screen and (max-width: 1200px) {
+    .maincontainer {
+        max-width: 700px;
+        margin-top: 0px;
     }
     .container {
-        margin-left: 0px;
-        padding-left: 0px;
-        justify-content: flex-start;
-        width: 700px;
+        width: 100%;
+        flex-direction: column;
     }
-    .container .text {
-        padding: 10px;
+    .hero .menu {
+        flex-direction: column;
         position: relative;
     }
+    .hero .graphics {
+        position: relative;
+        width: 100%;
+    }
+    .hero .text {
+        margin-left: 15%;
+        width: 70%;
+    }
+    .graph-section .text {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .graph-section .image-background {
+        position: relative;
+    }
+    .steps-section {
+        padding: 0px;
+    }
+    .quest-header {
+        width: 100%;
+    }
+    .quest-title {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .questheader-description {
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .third-button {
+        margin-left: 35%;
+    }
+    .steps-section .main-description {
+        margin-bottom: 50px;
+    }
+    .ecosystem-button {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .main-description2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .pages {
+        margin-left: 10%;
+    }
+    .contact {
+        width: 25%;
+    }
+    .progress {
+        width: 20%;
+        margin-right: 10%;
+    }
+    .progressbar {
+        width: 100%;
+    }
+    .hero .graphics img {
+        max-width: 80%;
+        margin-left: 15%
+    }
+    .graph-section .image-container {
+        width: 100%;
+    }
     
+    .hero .menu .divider {
+        height: 0px;
+    }
+    .hero .menu {
+        display: block;
+        margin-left: 15%;
+    }
+   
 
-
-
+    @media only screen and (max-width: 600px) {
+        .pages {
+            margin-left: 5%
+        }
+        .progress {
+            margin-right: 5%;
+        }
+    }
 
 
 
