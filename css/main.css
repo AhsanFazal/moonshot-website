@@ -6,6 +6,20 @@
 /* ==========================================================================
 General CSS
 ========================================================================== */
+@font-face {
+    font-family: Circular;
+    src: url(../fonts/Circular.ttf);
+}
+
+@font-face {
+    font-family: Circular_Book;
+    src: url(../fonts/Circular_Book.ttf);
+}
+
+@font-face {
+    font-family: Circular_Bold;
+    src: url(../fonts/Circular_Bold.ttf);
+}
 
 html {
     color: #222;
