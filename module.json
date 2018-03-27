@@ -1,0 +1,11 @@
+{
+   "slug": "web",
+   "controllers": {
+      "web": "controllers/index.php"
+   },
+   "webOptions": {
+      "staticPaths": ["**"],
+      "publicPaths": ["**"],
+      "catchAll": true
+   }
+}
