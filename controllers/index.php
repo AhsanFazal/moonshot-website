@@ -6,6 +6,6 @@
 
 // Start routes
 
-Route::get('/', function() {
+Route::any('/', function() {
     include('index.html');
 });
