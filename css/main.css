@@ -394,9 +394,20 @@ Author Styles
 }
 
 .steps-section .cards .card.done {
-    border: 1px solid #00CF98;
+    border: 5px solid #00CF98;
     opacity: 0.5;
     box-shadow: none;
+    position: relative;
+}
+
+.steps-section .cards .card.done .done-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Circular-Bold;
+    font-size: 100px;
+    color: #00CF98;
 }
 
 .steps-section .cards .card .title {
