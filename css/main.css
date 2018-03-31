@@ -514,7 +514,7 @@ Author Styles
     margin-top: 100px;
     height: 350px;
     max-width: 1500px;
-    background-color: #0A3954;
+    background-color: #131314;
     font-family: Circular-Book !important;
     font-size: 16px;
     color: #FFFFFF;
@@ -527,6 +527,7 @@ Author Styles
     color: white;
     text-decoration: none;
     margin-right: 35px;
+    z-index: 3;
 }
 .pagestitle {
     color: white;
@@ -547,6 +548,7 @@ Author Styles
     width: 320px;
     color: #FFFFFF;
     padding-top: 64px;
+    z-index: 3;
 }
 .contact a {
     text-decoration: none;
@@ -557,6 +559,7 @@ Author Styles
     width: 320px;
     padding-top: 64px;
     color: #FFFFFF;
+    z-index: 3;
 }
 .progressbar {
     width: 320px;
