@@ -394,7 +394,7 @@ Author Styles
 }
 
 .steps-section .cards .card.done {
-    border: 5px solid #00CF98;
+    border: 1px solid #00CF98;
     opacity: 0.5;
     box-shadow: none;
     position: relative;
