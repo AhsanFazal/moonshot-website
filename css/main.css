@@ -417,12 +417,16 @@ Author Styles
 
 .steps-section .cards .card.done .done-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 28%;
+    left: 33%;
     transform: translate(-50%, -50%);
     font-family: Circular-Bold;
     font-size: 100px;
     color: #00CF98;
+    transform: rotate(-20deg);
+    padding: 20px;
+    border: 6px solid #00CF98;
+    border-radius: 46px;
 }
 
 .steps-section .cards .card .title {
