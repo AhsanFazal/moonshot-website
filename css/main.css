@@ -475,6 +475,7 @@ Author Styles
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .ecosystem-card {
