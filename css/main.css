@@ -387,6 +387,18 @@ Author Styles
     margin-bottom: 64px
 }
 
+.steps-section .cards .card.inactive {
+    border: 1px solid #bebebe;
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+.steps-section .cards .card.done {
+    border: 1px solid #00CF98;
+    opacity: 0.5;
+    box-shadow: none;
+}
+
 .steps-section .cards .card .title {
     font-family: Circular-Bold;
     font-size: 30px;
