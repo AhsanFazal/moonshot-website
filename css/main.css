@@ -269,7 +269,7 @@ Author Styles
     top: 0px;
     right: 0px;
     height: 465px;
-    background-color: #0B3752;
+    background-color: #131314;
     display: flex;
     width: 600px;
 }
@@ -280,11 +280,11 @@ Author Styles
     width: auto;
     height: auto;
     align-self: center;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 .graph-section {
-    background-color: #0B3752;
+    background-color: #131314;
     width: 100%;
     display: flex;
     position: relative;
