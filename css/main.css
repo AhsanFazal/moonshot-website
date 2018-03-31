@@ -313,10 +313,9 @@ Author Styles
 }
 
 .graph-section .text .title {
-    font-family: Montserrat-Bold;
+    font-family: Circular-Bold;
     font-size: 36px;
     color: #FFFFFF;
-    letter-spacing: 2.67px;
 }
 
 .graph-section .text .description {
@@ -374,10 +373,9 @@ Author Styles
 }
 
 .main-title {
-    font-family: Montserrat-Bold;
+    font-family: Circular-Bold;
     font-size: 36px;
     color: #000000;
-    letter-spacing: 2.67px;
     text-align: center;
 }
 
@@ -468,25 +466,6 @@ Author Styles
 }
 .steps-section .cards .card .explaination .text.bold {
     font-family: Circular-Bold;
-}
-.main-title {
-    font-family: Montserrat-Bold;
-    font-size: 36px;
-    color: #000000;
-    letter-spacing: 2.67px;
-    text-align: center;
-}
-
-
-.main-description {
-    font-family: Circular-Book;
-    font-size: 16px;
-    color: #4D4D4D;
-    letter-spacing: 0;
-    line-height: 32px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
 }
 .ecosystem-parent {
     display: flex;
