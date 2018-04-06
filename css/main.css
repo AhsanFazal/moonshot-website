@@ -413,6 +413,7 @@ Author Styles
     opacity: 0.5;
     box-shadow: none;
     position: relative;
+    overflow: hidden;
 }
 
 .steps-section .cards .card.done .done-text {
@@ -479,14 +480,13 @@ Author Styles
 .ecosystem-parent {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 15px;
+    justify-content: space-around;
+    margin-top: 64px;
 }
 
 .ecosystem-card {
     height: 230px;
     width: 250px;
-    margin: 45px;
     box-shadow: 0 10px 50px 0 rgba(0,0,0,0.20);
     border-radius: 5px;
 }
@@ -494,7 +494,6 @@ Author Styles
 .maincontainer {
     margin: auto;
     max-width: 1500px;
-    min-width: 1200px;
     position: relative;
     box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.15);
 }
@@ -589,16 +588,197 @@ Author Styles
 .text {
     float: left;
 }
+
+.graphics-container {
+    display: flex;
+    justify-content:space-between;
+    z-index: 3
+}
 /* ==========================================================================
 CSS media queries
 ========================================================================== */
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 90%
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .container {
-        width: 80%
+        width: 85%
+    }
+    .graph-section .image-container img {
+        max-width: 80%;
     }
     .hero .graphics {
-        width: 500px;
+        width: 470px;
+    }
+    .hero .graphics img {
+        margin: 0 auto;
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .hero .graphics {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .hero .text {
+        width: 430px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .hero .graphics::after {
+        display: none
+    }
+    .hero .graphics {
+        width: 45%
+    }
+    .hero .text .title {
+        width: 300px;
+    }
+    .hero .text .description {
+        width: 300px;
+    }
+    .hero .graphics {
+        height: 530px;
+    }
+    .ecosystem-parent {
+        margin: 32px;
+        margin-top: 64px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ecosystem-parent {
+        flex-direction: column;
+    }
+    .ecosystem-card {
+        align-self: center;
+        margin: 32px;
+    }
+    .steps-section .cards .card .explaination {
+        flex-direction: column
+    }
+    .steps-section .cards .card .explaination .description,
+    .steps-section .cards .card .explaination .goal {
+        width: 100%
+    }
+
+    .steps-section .cards .card .explaination .goal {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .hero .graphics img {
+        max-width: 80%;
+    }
+    .steps-section .cards .card.done .done-text {
+        top: 28%;
+        left: 33%;
+        font-size: 50px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        height: auto
+    }
+    .footer .container {
+        flex-direction: column
+    }
+    .hero .graphics {
+        width: 100%;
+        margin-top: 475px;
+        height: 300px;
+    }
+    .hero .text {
+        margin-bottom: calc(100px + 310px);
+        width: 100%
+    }
+    .hero .text .description,
+    .hero .text .title {
+        width: 100%
+    }
+    .hero .graphics:after {
+        position: relative;
+        display: none
+    }
+    .graphics-container {
+        flex-direction: column
+    }
+    .hero .graphics img {
+        margin: 0 auto;
+        margin-left: 16%;
+        margin-top: 64px;
+    }
+    .graph-section .text {
+        width: 100%
+    }
+    .graph-section .image-container img {
+        max-width: 100%;
+        margin-bottom: 64px;
+    }
+    .contact {
+        margin: 0
+    }
+    .social {
+        margin: 0;
+        padding-bottom: 64px;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .hero .text {
+        margin-bottom: calc(100px + 270px);
+    }
+    .hero .graphics img {
+        margin-top: 32px;
+    }
+    .steps-section .cards .card.done .done-text {
+        top: 45%;
+        left: 22%;
+    }
+}
+
+@media only screen and (max-width: 417px) {
+    .hero .text {
+        margin-bottom: calc(100px + 130px);
+    }
+    .hero .buttons {
+        flex-direction: column
+    }
+    .hero .buttons .button,
+    .hero .buttons .and {
+        align-self: flex-start
+    }
+    .hero .buttons .and {
+        margin: 10px;
+    }
+    .hero .menu {
+        margin: 0 0 50px 0;
+    }
+    .hero .graphics {
+        margin-top: 500px;
+    }
+    .hero .graphics {
+        height: 180px;
+    }
+    .ecosystem-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact {
+        width: 100%
+    }
+    .steps-section .cards .card {
+        padding: 32px;
     }
 }
 /* ============================================================================================== 
